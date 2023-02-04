@@ -11,7 +11,7 @@ VatValidator.isValid('Country Prefix', 'Full Vat Number');
 - Found the right country prefix anytime you need it.
 
 ```js
-VatValidator.foundPrefix('Country Name');
+VatValidator.findPrefix('Country Name');
 ```
 
 - (NEW) Now new method available, country prefix input is required, it will return a random VAT validated number.
