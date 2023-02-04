@@ -1,0 +1,22 @@
+{
+  "name": "world-vat-validator-vcx",
+  "version": "1.0.0",
+  "description": "World vat validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valeriocaporalix/world-vat-validator-vcx.git"
+  },
+  "keywords": [
+    "vat"
+  ],
+  "author": "valeriocaporalix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valeriocaporalix/world-vat-validator-vcx/issues"
+  },
+  "homepage": "https://github.com/valeriocaporalix/world-vat-validator-vcx#readme"
+}
