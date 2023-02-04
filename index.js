@@ -1,5 +1,6 @@
 const vatValidator = require('./validator.js');
 const prefixGenerator = require('./prefixGenerator.js');
+const vatGenerator = require('./vatGenerator.js');
 
 class WorldVatValidator {
   isValid(countryPrefix, vatNumber) {
@@ -7,6 +8,9 @@ class WorldVatValidator {
   }
   findPrefix(country) {
     return prefixGenerator(country);
+  }
+  generate(countryPrefix) {
+    return vatGenerator(countryPrefix);
   }
 }
 

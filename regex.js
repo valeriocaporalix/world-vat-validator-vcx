@@ -24,7 +24,7 @@ const portugal = /(PT)?[0-9]{9}/;
 const romania = /(RO)?[0-9]{2,10}/;
 const slovakia = /(SK)[0-9]{10}/;
 const slovenia = /(SI)[0-9]{8}/;
-const spain = /(ES)[0-9A-Z][0-9]{7}[09-A-Z]/;
+const spain = /(ES)[0-9A-Z][0-9]{7}[0-9A-Z]/;
 const sweden = /(SE)?[0-9]{12}/;
 const europeanCompany = /(EU)[0-9A-Z]{9}/;
 
