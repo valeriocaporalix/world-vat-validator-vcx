@@ -11,7 +11,9 @@
     "url": "git+https://github.com/valeriocaporalix/world-vat-validator-vcx.git"
   },
   "keywords": [
-    "vat"
+    "vat",
+    "world-vat",
+    "validator"
   ],
   "author": "valeriocaporalix",
   "license": "ISC",

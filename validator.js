@@ -67,10 +67,13 @@ var {
   dominicanRepublic,
   uruguay,
   venezuela,
+  europeanCompany,
 } = require('./regex.js');
 
-const vatValidator = (country, vat) => {
-  switch (country) {
+const vatValidator = (country, vatNumber) => {
+  let countryToUpperCase = country.toUpperCase();
+  let vat = vatNumber.toUpperCase();
+  switch (countryToUpperCase) {
     case 'AT':
       return austria.test(vat);
     case 'BE':
@@ -207,6 +210,8 @@ const vatValidator = (country, vat) => {
       return uruguay.test(vat);
     case 'VE':
       return venezuela.test(vat);
+    case 'EU':
+      return europeanCompany.test(vat);
     default:
       return null;
   }

@@ -8,6 +8,12 @@
 VatValidator.isValid('Country Prefix', 'Full Vat Number');
 ```
 
+- Found the right country prefix anytime you need it.
+
+```js
+VatValidator.foundPrefix('Country Name');
+```
+
 ## Installing
 
 Using npm:
