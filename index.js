@@ -5,7 +5,7 @@ class WorldVatValidator {
   isValid(countryPrefix, vatNumber) {
     return vatValidator(countryPrefix, vatNumber);
   }
-  foundPrefix(country) {
+  findPrefix(country) {
     return prefixGenerator(country);
   }
 }
