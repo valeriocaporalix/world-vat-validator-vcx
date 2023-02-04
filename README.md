@@ -8,8 +8,6 @@
 VatValidator.isValid('Country Prefix', 'Full Vat Number');
 ```
 
--
-
 ## Installing
 
 Using npm:
