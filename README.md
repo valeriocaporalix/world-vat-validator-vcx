@@ -14,6 +14,12 @@ VatValidator.isValid('Country Prefix', 'Full Vat Number');
 VatValidator.foundPrefix('Country Name');
 ```
 
+- _NEW_ Now new generate method available, input required is only country prefix, it will return a random VAT validated number.
+
+```js
+VatValidator.generate('Country Prefix');
+```
+
 ## Installing
 
 Using npm:
