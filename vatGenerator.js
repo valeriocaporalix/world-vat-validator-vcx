@@ -263,7 +263,7 @@ const vatGenerator = (countryPrefix) => {
     case 'EU':
       return 'EU' + alphaNumericGenerator(9);
     default:
-      return null;
+      return 'No country prefix found';
   }
 };
 
