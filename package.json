@@ -1,6 +1,6 @@
 {
   "name": "world-vat-validator-vcx",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "World vat validator",
   "main": "index.js",
   "scripts": {
