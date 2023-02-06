@@ -130,9 +130,9 @@ const vatGenerator = (countryPrefix) => {
     case 'IS':
       return alphaNumericGenerator(6 - Math.floor(Math.random() * 2));
     case 'IN':
-      return alphaNumericGenerator(15);
+      return numericGenerator(15);
     case 'ID':
-      return alphaNumericGenerator(15);
+      return numericGenerator(15);
     case 'IL':
       return numericGenerator(9);
     case 'KZ':
@@ -196,7 +196,11 @@ const vatGenerator = (countryPrefix) => {
         numericGenerator(2)
       );
     case 'CL':
-      return numericGenerator(9);
+      return (
+        numericGenerator(8) +
+        '-' +
+        (Math.floor(Math.random() * 2) === 1 ? 'K' : numericGenerator(1))
+      );
     case 'CO':
       return numericGenerator(10);
     case 'CR':
