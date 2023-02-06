@@ -266,6 +266,8 @@ const vatGenerator = (countryPrefix) => {
       );
     case 'EU':
       return 'EU' + alphaNumericGenerator(9);
+    case 'JP':
+      return 'JP' + alphaNumericGenerator(12);
     default:
       return 'No country prefix found';
   }

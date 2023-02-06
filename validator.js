@@ -68,6 +68,7 @@ var {
   uruguay,
   venezuela,
   europeanCompany,
+  japan,
 } = require('./regex.js');
 
 const vatValidator = (country, vatNumber) => {
@@ -212,6 +213,8 @@ const vatValidator = (country, vatNumber) => {
       return venezuela.test(vat);
     case 'EU':
       return europeanCompany.test(vat);
+    case 'JP':
+      return japan.test(vat);
     default:
       return null;
   }

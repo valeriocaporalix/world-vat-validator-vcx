@@ -1,6 +1,6 @@
 //EU Countries
 const austria = /(AT)U[0-9]{8}/;
-const belgium = /(BE)0[0-9]{9}/;
+const belgium = /(BE)[0-1][0-9]{9}/;
 const bulgaria = /(BG)[0-9]{9,10}/;
 const croatia = /(HR)[0-9]{11}/;
 const cyprus = /(CY)[0-9]{8}[A-Z]/;
@@ -30,19 +30,19 @@ const europeanCompany = /(EU)[0-9A-Z]{9}/;
 
 // non-EU Countries
 const albania = /(J|K|L)[0-9A-Z]{8}[A-Z]/;
-const northMacedonia = /(MK)[0-9]{13}/;
+const northMacedonia = /(MK)?[0-9]{7,13}/;
 const australia = /(AU)?[0-9]{11}/;
 const belarus = /(BY)?[0-9]{9}/;
 const canada = /(CA)?[0-9A-Z]{9}/;
-const iceland = /(IS)?[0-9A-Z]{5,6}/;
-const india = /(IN)?[0-9]{15}/;
+const iceland = /(IS|KT|VSK)?[0-9A-Z]{5,10}/;
+const india = /(IN)?[0-9A-Z]{15}/;
 const indonesia = /(ID)?[0-9]{15}/;
 const israel = /(IL)?[0-9]{9}/;
 const kazakhstan = /(KZ)?[0-9]{12}/;
-const newZeland = /(NZ)?[0-9]{9}/;
+const newZeland = /(NZ)?(([0-9]{9})|([0-9]{3}-[0-9]{3}-[0-9]{3}))/;
 const nigeria = /(NG)?[0-9]{8}-[0-9]{4}/;
 const norway = /(NO)?[0-9]{9}(MVA)?/;
-const philippines = /(PH)?[0-9]{12}/;
+const philippines = /(PH|BE)?[A-Z0-9]{10,12}/;
 const russia = /(RU)?[0-9]{10,12}/;
 const sanMarino = /(SM)?[0-9]{5}/;
 const saudiArabia = /(SA)?[0-9]{15}/;
@@ -52,7 +52,8 @@ const switzerland =
 const turkey = /(TR)?[0-9]{10}/;
 const ukraine = /(UA)?[0-9]{12}/;
 const unitedKindom = /(GB|XI)([0-9]{9}([0-9]{3})?|[A-Z]{2}[0-9]{3})/;
-const uzbekistan = /(UZ)?[0-9]{9}/;
+const uzbekistan = /(UZ)?(([0-9]{9})|([0-9]{8}[A-Z]))/;
+const japan = /(JP)?[0-9A-Z]/;
 
 // Latin American Countries
 const argentina = /(AR)?[0-9]{11}/;
@@ -147,4 +148,5 @@ module.exports = {
   uruguay,
   venezuela,
   europeanCompany,
+  japan,
 };

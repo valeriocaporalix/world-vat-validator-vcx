@@ -139,6 +139,8 @@ const prefixGenerator = (country) => {
       return 'VE';
     case 'europe':
       return 'EU';
+    case 'japan':
+      return 'JP';
     default:
       return 'No country found';
   }
